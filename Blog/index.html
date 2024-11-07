@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Portfolio of Pasha Shilin, aspiring programmer.">
+    <meta name="keywords" content="portfolio, programming, blog, Pasha Shilin">
+    <link rel="stylesheet" href="style.css">
+    <title>Pasha Shilin's Portfolio</title>
+</head>
+<body>
+
+    <!-- Header Section with Navigation -->
+    <header class="header">
+        <h1 class="header__title">Pasha Shilin</h1>
+        <nav class="header__nav">
+            <ul class="header__menu menu">
+                <li class="menu__item"><a href="#about" class="menu__link">About Me</a></li>
+                <li class="menu__item"><a href="#gallery" class="menu__link">Gallery</a></li>
+                <li class="menu__item"><a href="#projects" class="menu__link">Projects</a></li>
+                <li class="menu__item"><a href="#contact" class="menu__link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section id="about" class="section about">
+            <h2 class="section__title">About Me</h2>
+            <p class="about__description">Hi! My name is <em>Pasha</em>. My goal is to become a <strong>professional</strong> in the field of technology.</p>
+            <ul class="about__list">
+                <li class="about__item"><strong>Education:</strong> ITMO University 3rd year</li>
+                <li class="about__item"><strong>Skills:</strong> C#, C++, Java, Python, HTML, CSS, SQL</li>
+            </ul>
+        </section>
+
+        <section id="gallery" class="section gallery">
+            <h2 class="section__title">Gallery</h2>
+            <div class="gallery__images">
+                <img src="img/ph1.jpg" class="gallery__image" width="22.5%">
+                <img src="img/ph2.jpg" class="gallery__image" width="50%">
+                <img src="img/ph3.jpg" class="gallery__image" width="25%">
+            </div>
+        </section>
+
+        <section id="projects" class="section projects">
+            <h2 class="section__title">Projects</h2>
+            <p class="projects__description">Here are some projects I have worked on:</p>
+            <div class="projects__table">
+                <div class="projects__row projects__row--header">
+                    <div class="projects__cell">Project</div>
+                    <div class="projects__cell">Description</div>
+                </div>
+                <div class="projects__row">
+                    <div class="projects__cell">C++ allocator</div>
+                    <div class="projects__cell">Implementation of allocation in C++</div>
+                </div>
+                <div class="projects__row">
+                    <div class="projects__cell">Spring project</div>
+                    <div class="projects__cell">Working with various Spring components in Java</div>
+                </div>
+                <div class="projects__row">
+                    <div class="projects__cell">ASCII art</div>
+                    <div class="projects__cell">
+                        <pre class="projects__ascii">
+────────────────────────────────
+───────────────██████████───────
+──────────────████████████──────
+──────────────██────────██──────
+──────────────██▄▄▄▄▄▄▄▄▄█──────
+──────────────██▀███─███▀█────── 
+█─────────────▀█────────█▀──────
+██──────────────────█───────────
+─█──────────────██──────────────
+█▄────────────████─██──████
+─▄███████████████──██──██████ ──
+────█████████████──██──█████████
+─────────────████──██─█████──███
+──────────────███──██─█████──███
+──────────────███─────█████████
+──────────────██─────████████▀
+────────────────██████████
+────────────────██████████
+─────────────────████████
+──────────────────██████████▄▄
+────────────────────█████████▀
+─────────────────────████──███
+────────────────────▄████▄──██
+────────────────────██████───▀
+────────────────────▀▄▄▄▄▀
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact">
+            <h2 class="section__title">Contact</h2>
+            <div class="table">
+                <div class="table__row table__row--header">
+                    <div class="table__cell">Contact Method</div>
+                    <div class="table__cell">Details</div>
+                </div>
+                <div class="table__row">
+                    <div class="table__cell">Email</div>
+                    <div class="table__cell">Shilin.PA2004@yandex.ru</div>
+                </div>
+                <div class="table__row">
+                    <div class="table__cell">Telegram</div>
+                    <div class="table__cell">@PavelShilin</div>
+                </div>
+                <div class="table__row">
+                    <div class="table__cell">Phone</div>
+                    <div class="table__cell">+7 (953) 159-50-57</div>
+                </div>
+                <div class="table__row">
+                    <div class="table__cell">Location</div>
+                    <div class="table__cell">St. Petersburg, Russia</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section credo">
+            <article class="credo__article">
+                <h3 class="credo__title">My life credo</h3>
+                <p class="credo__text">Если тебе где-то не рады в рваных носках, <br>
+                    то и в целых туда <ins>идти не стоит</ins>
+                </p>
+                <p class="credo__author"><sup>Jason Statham</sup></p>
+            </article>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__text">2024 Pasha Shilin's Portfolio</p>
+
+    </footer>
+</body>
+</html>
