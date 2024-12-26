@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Table Constructor">
+    <meta name="keywords" content="table constructor, dynamic table">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/constructor.js" defer></script>
+    <script src="js/fetch.js" defer></script>
+    <title>Table Constructor</title>
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__title menu__link">Pasha Shilin</h1>
+        <nav class="header__nav">
+            <ul class="header__menu menu">
+                <li class="menu__item"><a href="index.html" class="menu__link">About Me</a></li>
+                <li class="menu__item"><a href="gallery.html" class="menu__link">Gallery</a></li>
+                <li class="menu__item"><a href="projects.html" class="menu__link">Projects</a></li>
+                <li class="menu__item"><a href="contact.html" class="menu__link">Contact</a></li>
+                <li class="menu__item"><a href="constructor.html" class="menu__link">Constructor</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="section">
+            <h2 class="section__title">Questions</h2>
+            <form id="table-form" class="constructor__form">
+                <div>
+                    <label for="single-question">Enter a question:</label>
+                    <input type="text" id="single-question" name="single-question" required>
+                    <button type="button" id="push-btn" class="constructor__btn">Push</button>
+                </div>
+                <div id="question-list-container">
+                    <h3>Current Questions:</h3>
+                    <ul id="question-list" class="constructor__list"></ul>
+                </div>
+                <button type="button" id="save-btn" class="constructor__btn">Save to LocalStorage</button>
+                <button type="button" id="load-btn" class="constructor__btn">Load from LocalStorage</button>
+            </form>
+            <div id="table-container" class="table-container"></div>
+        </section>
+        <section class="section">
+            <h2 class="section__title">We have questions from users:</h2>
+            <div id="user-list-container">
+                <div id="preloader" >
+                    <p>Loading users...</p>
+                    <iframe src="https://giphy.com/embed/O1w6XcOw9mKD2p4UM5" width="480" height="480" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                </div>
+                <ul id="user-list"></ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__text">2024 Pasha Shilin's Portfolio</p>
+    </footer>
+</body>
+</html>
