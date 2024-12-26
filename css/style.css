@@ -243,3 +243,28 @@ body {
     border-radius: 5px;
     background-color: #f9f9f9;
 }
+
+
+.swiper-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #ff6347; 
+}
+
+
+.swiper-pagination-bullet {
+    background-color: #ff6347;
+}

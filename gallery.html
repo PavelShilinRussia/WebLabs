@@ -1,15 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Gallery of Pasha Shilin's photos and images.">
     <meta name="keywords" content="portfolio, gallery, photos, Pasha Shilin">
     <link rel="stylesheet" href="css/style.css">
+    <!-- Swiper.js CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <script src="js/script.js" defer></script>
+    <script src="js/gallery-swipe.js" defer></script>
     <title>Gallery - Pasha Shilin</title>
-</head>
-<body>
+    <style>
 
+.main {
+    flex: 1; 
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+    </style>
+</head>
+
+<body>
     <!-- Header Section with Navigation -->
     <header class="header">
         <h1 class="header__title">Pasha Shilin</h1>
@@ -25,12 +40,25 @@
     </header>
 
     <main class="main">
-        <section id="gallery" class="section gallery">
+        <section id="gallery" class="section gallery" style="Overflow: hidden">
             <h2 class="section__title">Gallery</h2>
-            <div class="gallery__images">
-                <img src="img/ph1.jpg" class="gallery__image" width="22.5%">
-                <img src="img/ph2.jpg" class="gallery__image" width="50%">
-                <img src="img/ph3.jpg" class="gallery__image" width="25%">
+            <!-- Swiper Container -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper" >
+                    <div class="swiper-slide" style="margin-right: 5px;" style="margin-left: 5px;">
+                        <img src="img/ph1.jpg" alt="Image 1" >
+                    </div>
+                    <div class="swiper-slide" style="margin-right: 5px;" style="margin-left: 5px;">
+                        <img src="img/ph2.jpg" alt="Image 2" >
+                    </div>
+                    <div class="swiper-slide" style="margin-right: 5px;" style="margin-left: 5px;">
+                        <img src="img/ph3.jpg" alt="Image 3" >
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
             </div>
         </section>
     </main>
@@ -38,5 +66,10 @@
     <footer class="footer">
         <p class="footer__text">2024 Pasha Shilin's Portfolio</p>
     </footer>
+
+    <!-- Swiper.js JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/gallery-swiper.js" defer></script>
 </body>
+
 </html>
