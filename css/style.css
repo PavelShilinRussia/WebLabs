@@ -1,0 +1,270 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+
+
+.main {
+    flex: 1; 
+    padding: 120px 20px 20px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    margin-top: 20px;
+    width: 100%; 
+    position: relative; 
+}
+
+
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header__title {
+    text-decoration: none;
+    font-size: 2.5em;
+}
+
+.header__menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.menu__item {
+    margin: 0 10px;
+}
+
+.menu__link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu__link:hover {
+    color: #ddd;
+}
+
+.main {
+    padding: 120px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.section {
+    width: 100%;
+    max-width: 1200px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.section__title {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.about__list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.gallery__images {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.projects__table {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.projects__row--header {
+    color: #333;
+    font-weight: bold;
+}
+
+.projects__row {
+    display: contents;
+}
+
+.projects__cell {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .projects__table {
+        grid-template-columns: 1fr;
+    }
+}
+
+.table {
+    display: grid;
+    grid-template-columns: 1fr 2fr; 
+    margin-top: 20px;
+}
+
+.table__row {
+    display: contents; 
+}
+
+.table__row--header {
+    font-weight: bold;
+    background-color: #eaeaea; 
+}
+
+.table__cell {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+
+.table__row:nth-child(even) .table__cell {
+    background-color: #f9f9f9; 
+}
+
+
+.table__row:nth-child(odd) .table__cell {
+    background-color: #ffffff; 
+}
+
+
+@media (max-width: 600px) {
+    .table {
+        grid-template-columns: 1fr; 
+    }
+}
+
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .table {
+        grid-template-columns: 1fr 1fr; 
+    }
+}
+
+@media (min-width: 901px) {
+    .table {
+        grid-template-columns: 1fr 2fr; 
+    }
+}
+
+
+.menu__link.active {
+    color: #ff6347; 
+    font-weight: bold;
+}
+
+.menu__link:hover {
+    color: #ddd;
+}
+
+
+
+
+
+
+
+
+.constructor__list {
+    list-style-type: decimal;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+}
+
+.constructor__list li {
+    padding: 5px 0;
+}
+
+
+
+
+
+
+#preloader {
+    text-align: center;
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+#user-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#user-list li {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+
+.swiper-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #ff6347; 
+}
+
+
+.swiper-pagination-bullet {
+    background-color: #ff6347;
+}
