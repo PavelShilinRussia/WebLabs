@@ -102,3 +102,7 @@ coverage/
 .husky/_
 .env
 allure-results
+
+/generated/prisma
+
+/generated/prisma
